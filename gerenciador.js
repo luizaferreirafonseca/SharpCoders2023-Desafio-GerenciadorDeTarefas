@@ -311,7 +311,7 @@ function saveTarefa() {
     let horaTermino = document.getElementById('horaDeTermino').value
     let descricaoTarefa = document.getElementById('descricaoDaTarefa').value
 
-    if (nomeTarefa === "" || dataInicio === "" || dataTermino === "" || horaInicio === "" || horaTermino === "" || descricaoTarefa === "") {
+    if (nomeTarefa === "" || dataInicio === "" || dataTermino === "" || horaInicio === "" || horaTermino === "" || descricaoTarefa ===  "" ) {
         alert('Preencha todos os campos')
         return
     }
@@ -343,9 +343,3 @@ function saveTarefa() {
 window.onload = function () {
     mostrarTarefasNaTabela();
 }
-
-
-
-
-
-
