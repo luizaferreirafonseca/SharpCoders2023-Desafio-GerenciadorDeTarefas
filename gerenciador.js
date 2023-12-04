@@ -18,11 +18,8 @@ let horaTermino;
 let descricaoTarefa;
 
 let listaDeTarefas = [];
-listaDeTarefas = usuarioLogado.tarefas // estou pegando a conta logada e salvando as tarefas na variavel
+listaDeTarefas = usuarioLogado.tarefas // estou pegando a conta logada e salvando as tarefas na variavel.
 
-
-
-// modais inserção 
 
 const caixaPrimeiroModal = document.getElementById('caixa')
 const caixaInteriorModal = document.getElementById('caixa_interior')
@@ -41,7 +38,7 @@ function mostrarPrimeiroModal(tarefa) {
 }
 
 
-// segundo form. insercao. 
+// Segundo form - inserção
 
 const botoes = document.getElementById('botoes')
 const btnCriarTarefa = document.getElementById('criarTarefa_button');
@@ -182,7 +179,7 @@ function inserirDados() {
 inserirDados()
 
 
-//Aqui eu peguei apenas a key USerLogged.
+//Eu peguei apenas a key UserLogged.
 
 function sairGerenciador() {
     localStorage.removeItem("User Logged")
@@ -197,9 +194,6 @@ const formatter = Intl.DateTimeFormat('pt-BR', {
 });
 
 
-
-
-
 //Estou pegando  o status de cada tarefa. Vou usar isso no meu forEach.
 
 function getStatus(tarefa) {
@@ -207,10 +201,6 @@ function getStatus(tarefa) {
     const dataComeco = new Date(`${tarefa.dataInicio}T${tarefa.horaInicio}`);
     const dataFim = new Date(`${tarefa.dataTermino}T${tarefa.horaTermino}`);
 
-
-
-
-    //pendente - tarefa ainda n foi feita 
 
     if (tarefa.estaCompleta === true) {
         return "Realizada"
@@ -224,18 +214,16 @@ function getStatus(tarefa) {
         return "Pendente";
     }
 
-    //Em andamento - inicio menor que dataAtual e dataAtual menor que dataFim
     if (dataComeco <= dataAtual && dataAtual < dataFim) {
         return "Em andamento";
 
-        //atraso - se diaAtual for maior que dataFim
 
     }
 
 }
 
 //Eu estou mudando as cores dos meus status a cada vez que colocam as tarefas e suas datas. Irei usar essa função na parte de status. 
-//passo o status dela e ela me retorna a classe (com a cor) do meu Status. Coloquei as cores do bootstraps pra serem retornadas (as classes dele, que já vem a cor embutida)
+//passo o status dela e ela me retorna a classe (com a cor) do meu Status. Coloquei as cores do bootstraps pra serem retornadas (as classes dele, que já vem a cor embutida).
 
 function statusCores(status) {
 
@@ -287,7 +275,7 @@ function mostrarTarefasNaTabela() {
     
     
     `;
-        //Dentro do meu html tive que passar algumas variáveis. Lembrar que é uma abstração. Passei a class statusCores(status), pois depois que pegar o status pelo getstatus, irá aplicar
+        //Dentro do meu html tive que passar algumas variáveis. Passei a class statusCores(status), pois depois que pegar o status pelo getstatus, irá aplicar
         //a função de mudar a cor. 
 
         tabela.appendChild(tr);
