@@ -1,5 +1,5 @@
 
-<h1 align="center">:file_cabinet: PROJETO CLONE SPOTIFY - SHARPCODERS.md</h1>
+<h1 align="center">:file_cabinet: PROJETO  DESAFIO - GERENCIADOR DE TAREFAS - SHARPCODERS.md</h1>
 
 ## :memo: Descrição
 Este é um projeto Desafio (Trilha FastTrack), do curso de formação SharpCoders, mediado pela ImãTech em parceria com a MXM Sistemas. 
@@ -12,7 +12,7 @@ O objetivo é criar um Gerenciador de Tarefas.
 * Bootstrap
 
 ## :rocket: Link do Pages
-
+https://luizaferreirafonseca.github.io/SharpCoders2023-Desafio-GerenciadorDeTarefas/
 
 ## :dart: Status do projeto
 
