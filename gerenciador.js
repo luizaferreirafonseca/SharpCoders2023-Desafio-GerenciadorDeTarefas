@@ -315,7 +315,7 @@ function saveTarefa() {
         estaCompleta: false
     }
 
-    listaDeTarefas.push(novaTarefa); // Estou colocando cada tarefa no meu array listadeTarefas.
+    listaDeTarefas.push(novaTarefa); //colocando cada tarefa no meu array listadeTarefas.
 
     usuarioLogado.tarefas = listaDeTarefas
     localStorage.setItem(usuario, JSON.stringify(usuarioLogado))
